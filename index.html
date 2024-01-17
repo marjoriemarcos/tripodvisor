@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+ 
 </head>
 <body>
-
   <header class="header">
     <nav>
       <div class="header__part">
@@ -50,11 +50,15 @@
 
   <main class="container">
     <div class="content">
-      <h1 class="content__title">Partir en voyage</h1>
+      <h1 class="content__title" id="title-voyage">Partir en voyage</h1>
 
       <section class="slider">
-        <button class="btn slider__btn" type="button" aria-label="Précédent">&lt;</button>
-        <button class="btn slider__btn" type="button" aria-label="Suivant">&gt;</button>
+
+        <img class="slider__img slider__img--current"  src="./img/ocean.jpg" alt="Ocean">
+        
+        <button class="btn slider__btn left" type="button" aria-label="Précédent">&lt;</button>
+        <button  class="btn slider__btn right" type="button" aria-label="Suivant">&gt;</button>
+      
       </section>
 
       <section class="segment">
@@ -225,5 +229,11 @@
       <p>Toute ressemblance avec d'autres contenus est purement fortuite.</p>
     </div>
   </footer>
+  <script src="./js/newsletters.js"></script>
+  <script src="./js/errorMessages.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/destination.js"></script>
+
 </body>
 </html>

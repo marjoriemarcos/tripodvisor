@@ -1,5 +1,5 @@
 // "Module" des actions possibles sur les Card destination
-
+import errorMessages from "./errorMessages.js";
 const destinations = {
 
     // une méthode qui pose des ecouteurs de click sur les boutons coeur des cartes
@@ -20,7 +20,7 @@ const destinations = {
         console.log(event);
 
         // on supprime les éventuels messages du div qui contient toutes les cards
-        errorMessages.removeErrorMessage(document.querySelector('.cards'));
+        errorMessages.removeErrorMessages(document.querySelector('.cards'));
 
         // comment savoir sur quel coeur (de quelle destination) on a cliqué
         const clickedHeart = event.currentTarget;
@@ -31,10 +31,8 @@ const destinations = {
         // un element à partir d'un selecteur CSS mais en cherchant non as dans les enfants mais dans les parents
         const correspondingCard = clickedHeart.closest('.card');
         console.log('correspondingCard', correspondingCard);
-        errorMessages.addErrorMessage('Vous n\' etes pas encore inscrit', correspondingCard)
+        errorMessages.addErrorMessages('Vous n\'etes pas encore inscrit', correspondingCard)
 
     },
   }; // fin destination
-  
-  // au chargement de la page HTML : executer l'init du module destinations
-  document.addEventListener('DOMContentLoaded', destinations.init);
+  export default destinations;

@@ -1,3 +1,4 @@
+import errorMessages from "./errorMessages.js";
 const newsletter = {
     init: function () {
     // on recupere les elements et on les enregistre non pas dans des 
@@ -64,8 +65,11 @@ const newsletter = {
     },
 }
 
-// dès que le DOM est pret on lance l'init du module/objet newsletter
-document.addEventListener('DOMContentLoaded', newsletter.init);
+// le module n'est pas chargé dans le HTML dans app.js n'a pas avccès au code
+// on va l'export pour que apps puisse l'importer
+// on utilise rles mot "export default" pour export notre fichier
+
+export default newsletter;
 
   
   

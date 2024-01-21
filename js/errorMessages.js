@@ -6,7 +6,7 @@ const errorMessages = {
     * @param {Node} parentElement : le node dans lequel est ajouté le p
     */
 
-    addErrorMessage: function (messageToDisplay, parentElement) {
+    addErrorMessages: function (messageToDisplay, parentElement) {
       console.log('on ajoute un message');
       // creer un p 
       const newParagraph = document.createElement('p');
@@ -22,7 +22,7 @@ const errorMessages = {
    * la méthode qui supprime les messages du bloc donné en paramètre
    * @param {Node} elementWhereToRemoveErrors : l'element dans lequel on va supprimer les erreurs
    */
-    removeErrorMessage: function (elementWhereToRemoveErrors) {
+    removeErrorMessages: function (elementWhereToRemoveErrors) {
       console.log('on supprime les messages');
       // recuperer dans le bloc les elements ayant la classe message
       const allMessageElements = elementWhereToRemoveErrors.querySelectorAll('.message');
@@ -33,3 +33,5 @@ const errorMessages = {
       }
     },
   }
+
+  export default errorMessages;

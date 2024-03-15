@@ -9,5 +9,5 @@ HTML, CSS et JS
 
 ## Pour le visualiser
 
-[Cliquez ici pour voir le projet]([URL_du_lien](https://marjoriemarcos.github.io/tripodvisor/))
+[Cliquez ici pour voir le projet](https://marjoriemarcos.github.io/tripodvisor/)
 
